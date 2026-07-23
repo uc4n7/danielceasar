@@ -68,6 +68,7 @@
           box-shadow 0.2s ease,
           background-position 0.5s ease;
         animation: continuous-shake 0.5s infinite ease-in-out;
+        cursor: pointer;
       }
 
       .shake-btn:hover {
@@ -101,13 +102,24 @@
       <p class="hero-subtitle">YOW AISS</p>
 
       <div class="btn-container">
-        <a
-          href="https://www.pornhub.com/pornstar/johnny-sins"
-          class="shake-btn"
-          target="_blank"
+        <a href="https://" class="shake-btn" id="imagesBtn" target="_blank"
           >IMAGES</a
         >
       </div>
     </main>
+
+    <!-- Local audio element -->
+    <audio id="btnAudio" src="sound/hehe.mp3" preload="auto"></audio>
+
+    <script>
+      const button = document.getElementById("imagesBtn");
+      const audio = document.getElementById("btnAudio");
+
+      button.addEventListener("click", () => {
+        // Rewind audio so it plays instantly on repeat clicks
+        audio.currentTime = 0;
+        audio.play();
+      });
+    </script>
   </body>
 </html>
