@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Continuous Shake Button Hero</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero {
+        text-align: center;
+        padding: 2rem;
+        max-width: 800px;
+      }
+
+      .hero-title {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 1rem;
+        background: linear-gradient(135deg, #ffffff 0%, #94a3b8 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        line-height: 1.2;
+      }
+
+      .hero-subtitle {
+        font-size: 1.25rem;
+        color: #94a3b8;
+        margin-bottom: 2.5rem;
+      }
+
+      .btn-container {
+        display: flex;
+        justify-content: center;
+      }
+
+      .shake-btn {
+        display: inline-block;
+        text-decoration: none;
+        padding: 1rem 2.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+        color: #ffffff;
+        border-radius: 50px;
+        background: linear-gradient(
+          135deg,
+          #ff007a 0%,
+          #7928ca 50%,
+          #00dfd8 100%
+        );
+        background-size: 200% 200%;
+        box-shadow: 0 10px 25px -5px rgba(255, 0, 122, 0.4);
+        transition:
+          box-shadow 0.2s ease,
+          background-position 0.5s ease;
+        animation: continuous-shake 0.5s infinite ease-in-out;
+      }
+
+      .shake-btn:hover {
+        box-shadow: 0 15px 30px -5px rgba(0, 223, 216, 0.6);
+        background-position: right center;
+      }
+
+      @keyframes continuous-shake {
+        0%,
+        100% {
+          transform: translateX(0) rotate(0deg);
+        }
+        20% {
+          transform: translateX(-6px) rotate(-3deg);
+        }
+        40% {
+          transform: translateX(6px) rotate(3deg);
+        }
+        60% {
+          transform: translateX(-4px) rotate(-2deg);
+        }
+        80% {
+          transform: translateX(4px) rotate(2deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="hero">
+      <h1 class="hero-title">CUTE KAAYO SILA DIRI HAHAHAHAHA</h1>
+      <p class="hero-subtitle">YOW AISS</p>
+
+      <div class="btn-container">
+        <a href="https://https://pornhub.com" class="shake-btn" target="_blank"
+          >IMAGES</a
+        >
+      </div>
+    </main>
+  </body>
+</html>
